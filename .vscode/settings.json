@@ -1,0 +1,48 @@
+{
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook",
+        "*.c": "default"
+    },
+    "code-runner.runInTerminal": true,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "C_Cpp.errorSquiggles": "enabled",
+    "C_Cpp.default.enableConfigurationSquiggles": false,
+    "C_Cpp.updateChannel": "Insiders",
+    "editor.renderControlCharacters": true,
+    "window.zoomLevel": -1,
+    "diffEditor.renderSideBySide": false,
+    "window.commandCenter": true,
+    "git.ignoreMissingGitWarning": true,
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "explorer.confirmPasteNative": false,
+    "git.path": "",
+    "editor.fontSize": 13,
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+    "editor.rulers": [
+        80,
+        100,
+        120
+    ],
+    "editor.fontLigatures": true,
+    "python.formatting.provider": "autopep8",
+    "editor.minimap.enabled": false,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "diffEditor.codeLens": true,
+    "workbench.preferredDarkColorTheme": "Atom One Dark",
+    "autopep8.importStrategy": "fromEnvironment",
+    "autopep8.showNotifications": "always",
+    "python.analysis.autoFormatStrings": true,
+    "python.createEnvironment.contentButton": "show",
+    "workbench.colorTheme": "GitHub Dark Default"
+}

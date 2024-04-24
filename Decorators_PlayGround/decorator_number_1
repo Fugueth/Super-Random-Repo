@@ -1,0 +1,33 @@
+import time
+
+print(f"\n\n")
+
+
+def loading_animation() -> None:
+    animation_frames = ["|", "/", "-", "\\"]
+
+    for _ in range(10):  # Número de frames desejado
+        for frame in animation_frames:
+            print(f"\rLoading {frame} ", end="", flush=True)
+            time.sleep(0.1)  # Simulando algum trabalho em segundo plano
+    print("\rLoading Complete!    ")
+
+
+# Chame a função para iniciar a animação
+loading_animation()
+
+
+# turning the loading screan into a decorator
+def loading_anim(func):
+    def wraper() -> None:
+        animation_frames = ["|", "/", "-", "\\"]
+
+        # I dont know if this while is calling the loading prints while the function is running
+        while func:
+            for _ in range(10):  # Número de frames desejado
+                for frame in animation_frames:
+                    print(f"\rLoading {frame} ", end="", flush=True)
+                    time.sleep(0.1)  # Simulando algum trabalho em segundo plano
+            print("\rLoading Complete!    ")
+
+    return wraper
