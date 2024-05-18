@@ -12,6 +12,15 @@
   "tauri": {
     "allowlist": {
       "all": false,
+      "fs": {
+        "all": true
+      },
+      "dialog": {
+        "all": true
+      },
+      "window": {
+        "all": true
+      },
       "shell": {
         "all": false,
         "open": true
@@ -19,9 +28,10 @@
     },
     "windows": [
       {
-        "title": "file_buffer_project",
+        "title": "File Buffer project",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "decorations": false
       }
     ],
     "security": {
