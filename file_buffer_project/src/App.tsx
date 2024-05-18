@@ -8,7 +8,6 @@ export default function App(): any {
   const [fileChosen, setFileChosen] = useState<null | string>(null)
   const [fileChosenType, setFileChosenType] = useState<null | string>("NADA")
   const [bufferText, setBufferText] = useState<string>("")
-  const [bufferTextBytesTotal, setBufferTextBytesTotal] = useState<string>("")
   const [bufferTextBytes, setBufferTextBytes] = useState<string>("NENHUM INFORMADO")
 
   const reset = () => {
@@ -38,11 +37,11 @@ export default function App(): any {
       }
       
       console.log(selected, list_splitted[list_splitted.length - 1])
-      let contents = await readBinaryFile(selected);
+      let selected_value = String(selected)
+      let contents = await readBinaryFile(selected_value);
       if (Number(contents.length) >= 1) {
         setBufferText(contents.join(" "))
         setBufferTextBytes(`${Number(contents.length * (0.00000095367432)).toFixed(2)} Megabytes`)
-        setBufferTextBytesTotal(`${contents.length} Bytes no total`)
       } else {
         setBufferText("SEM CONTEÚDO")
         setBufferTextBytes("NENHUM INFORMADO")
